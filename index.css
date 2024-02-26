@@ -1,10 +1,24 @@
+#sidebar{
+    height: 100%;
+    width: 200px;
+    background-color: azure;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+#sidebar ul{
+    padding: 5px;
+}
+#sidebar ul li{
+    list-style: none;
+}
 .mainNavItem{
     cursor: pointer;
 }
-.mainNavItem > ul{
-    padding: 10px;
+.mainNavItem + div{
+    list-style: none;
+    padding-bottom: 5px;
 }
-.mainNavItem ul li{
+.mainNavItem + div ul li{
     list-style: none;
     margin-bottom: 5px;
 }
@@ -13,6 +27,5 @@
     display: none;
 }
 .sub{
-    transition: 0.2 ease-in-out;
-    background-color: red;
+    transition: 0.5 ease-in-out;
 }
