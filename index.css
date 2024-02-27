@@ -32,6 +32,10 @@ a {
   padding: 10px;
   border-radius: 20px;
 }
+#main_content,
+#sidebar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 #main_footer {
   position: absolute;
   bottom: 0;
