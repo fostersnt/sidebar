@@ -57,7 +57,7 @@ a {
 #sidebar > ul > li {
   list-style: none;
   margin-top: 20px;
-  border-top: 1px solid grey;
+  /* border-top: 1px solid grey; */
 }
 .mainNavItem {
   cursor: pointer;
@@ -74,7 +74,10 @@ a {
   list-style: none;
   margin-bottom: 10px;
 }
-
+.mainNavItem.active > div span:nth-child(2) {
+  /* color: red; */
+  transform: rotate(180deg);
+}
 .hideItem {
   display: none;
 }
