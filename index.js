@@ -1,12 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   var mainNavs = document.getElementsByClassName("mainNavItem");
   for (var i = 0; i < mainNavs.length; i++) {
+    // console.log(mainNavs[i]);
+    // mainNavs[i].classList.remove("active", "hideItem");
     mainNavs[i].addEventListener("click", function () {
-      // var childToHide = this.querySelector(".sub");
+      var itemToHide = this.nextElementSibling;
+
+      for (let index = 0; index < mainNavs.length; index++) {
+        mainNavs[index].classList.remove("active");
+        mainNavs[index].nextElementSibling.classList.add("hideItem");
+        // continue;
+      }
       this.classList.toggle("active");
-      var childToHide = this.nextElementSibling;
-      if (childToHide) {
-        childToHide.classList.toggle("hideItem");
+      if (itemToHide) {
+        itemToHide.classList.toggle("hideItem");
       }
     });
   }
