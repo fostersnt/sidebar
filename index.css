@@ -90,6 +90,7 @@ a {
 }
 #mobile_menu {
   cursor: pointer;
+  visibility: hidden;
 }
 #sidebar #close_sidebar,
 #main_content #main_content_header #mobile_menu {
@@ -171,6 +172,7 @@ a {
     z-index: 3;
   }
   #mobile_menu {
-    display: block;
+    /* display: block; */
+    visibility: visible;
   }
 }
