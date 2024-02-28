@@ -86,7 +86,6 @@ a {
 #sidebar > ul > li {
   list-style: none;
   margin-top: 20px;
-  /* border-top: 1px solid grey; */
 }
 .mainNavItem {
   cursor: pointer;
@@ -113,7 +112,7 @@ a {
   background-image: conic-gradient(#9c28c8, #f8ba50, #c72d69);
   /* background-image: conic-gradient(red, yellow, green); */
   border-radius: 50%;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .mainNavItem.active > div span:nth-child(2) {
   /* color: red; */
