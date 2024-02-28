@@ -8,6 +8,9 @@ body {
   padding: 0px;
   background-color: aliceblue;
 }
+a {
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -156,6 +159,25 @@ a {
 .hide_sidebar {
   display: block;
   margin-left: 0px;
+}
+#profile {
+  position: relative;
+}
+#profile > div {
+  position: absolute;
+  right: 0;
+  /* margin-top: 10px; */
+  z-index: 5;
+  display: none;
+  background-color: black;
+  width: 200px;
+  height: 100px;
+  color: yellow;
+  transition: 0.3s ease-in-out;
+  padding: 10px;
+}
+#profile:hover > div {
+  display: block;
 }
 
 @media (max-width: 900px) {
