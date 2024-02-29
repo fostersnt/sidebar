@@ -43,6 +43,7 @@ a {
 }
 #content_container #content {
   padding: 10px;
+  word-break: break-all;
 }
 #main_content #main_content_header {
   width: 100%;
