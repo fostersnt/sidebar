@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 body {
   margin: 0px;
   padding: 0px;
   background-color: aliceblue;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 a {
   text-decoration: none;
@@ -46,8 +50,8 @@ a {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
   padding-top: 10px;
   border-bottom: 1px solid rgb(200, 196, 196);
 }
@@ -94,6 +98,7 @@ a {
 #mobile_menu {
   cursor: pointer;
   visibility: hidden;
+  margin-left: 10px;
 }
 #sidebar #close_sidebar,
 #main_content #main_content_header #mobile_menu {
@@ -112,6 +117,10 @@ a {
 }
 .mainNavItem {
   cursor: pointer;
+}
+.mainNavItem > div {
+  display: flex;
+  justify-content: space-between;
 }
 .mainNavItem + div {
   list-style: none;
@@ -162,6 +171,7 @@ a {
 }
 #profile {
   position: relative;
+  margin-right: 10px;
 }
 #profile > div {
   position: absolute;
@@ -172,9 +182,14 @@ a {
   background-color: black;
   width: 200px;
   height: 100px;
-  color: yellow;
   transition: 0.3s ease-in-out;
   padding: 10px;
+}
+#profile > div a {
+  color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 #profile:hover > div {
   display: block;
